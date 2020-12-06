@@ -1,0 +1,3 @@
+displayName = Terraria Community Items Palooza
+author = Ryan, Smug, KoolaidLemonade, Æterna, Pyroknight, Mercedes-Benz, And Future Collaborators
+version = 0.1
