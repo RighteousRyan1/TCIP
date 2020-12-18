@@ -1,33 +1,35 @@
 using Microsoft.Xna.Framework;
+using TCIPMod.Core.Projectiles;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace TCIPMod.Items
+namespace TCIPMod.Core.Items
 {
-	public class CoolBow : ModItem
+	public class SatanicShiv : ModItem
 	{
 		public override void SetStaticDefaults() 
 		{
-			Tooltip.SetDefault("This is a basic modded sword.");
+			Tooltip.SetDefault("'Engulf enemies with the satanist inside you!'");
 		}
-
 		public override void SetDefaults() 
 		{
-			item.damage = 50;
+			item.damage = 35;
 			item.melee = true;
 			item.width = 40;
 			item.height = 40;
-			item.useTime = 1;
-			item.useAnimation = 1;
-			item.useStyle = ItemUseStyleID.HoldingOut;
+			item.useTime = 15;
+			item.useAnimation = 15;
+			item.useStyle = ItemUseStyleID.SwingThrow;
 			item.knockBack = 6;
 			item.value = 10000;
-			item.rare = ItemRarityID.Green;
-			item.UseSound = SoundID.Item3;
+			item.rare = ItemRarityID.Orange;
+			item.UseSound = SoundID.Item1;
 			item.autoReuse = true;
-			item.shoot = ProjectileID.WoodenArrowFriendly;
-			item.shootSpeed = 10;
+			item.shoot = ModContent.ProjectileType<SatanicShivProj>();
+			item.shootSpeed = 16;
+			item.noMelee = true;
+			item.noUseGraphic = true;
 		}
         public override Vector2? HoldoutOffset()
         {
@@ -35,10 +37,6 @@ namespace TCIPMod.Items
         }
         public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
         {
-			for (int projectieLoaderProjectileCountButItsBootlegAsFuckBecauseISaidSo = 0; projectieLoaderProjectileCountButItsBootlegAsFuckBecauseISaidSo < 10; projectieLoaderProjectileCountButItsBootlegAsFuckBecauseISaidSo++)
-			{
-				Projectile.NewProjectile(position + new Vector2(Main.rand.Next(-100, 100), Main.rand.Next(-100, 100)), new Vector2(speedX, speedY), Main.rand.Next(0, ProjectileLoader.ProjectileCount), Main.rand.Next(0, 25), Main.rand.Next(0, 10));
-			}
 			return true;
         }
         public override bool AltFunctionUse(Player player)
@@ -61,7 +59,6 @@ namespace TCIPMod.Items
         {
             base.UpdateInventory(player);
         }
-
         public override void AddRecipes() 
 		{
 			ModRecipe recipe = new ModRecipe(mod);

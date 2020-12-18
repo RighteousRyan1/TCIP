@@ -1,6 +1,6 @@
 using Terraria.ModLoader;
 
-namespace TCIPMod
+namespace TCIPMod.Core
 {
 	public class ModMod : Mod
 	{
