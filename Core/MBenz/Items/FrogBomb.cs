@@ -6,7 +6,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace TCIPMod.MBenz.Items
+namespace TCIPMod.Core.MBenz.Items
 {
     public sealed class FrogBomb
         : ModItem

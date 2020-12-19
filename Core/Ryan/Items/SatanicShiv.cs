@@ -1,10 +1,10 @@
 using Microsoft.Xna.Framework;
-using TCIPMod.Core.Projectiles;
+using TCIPMod.Core.Ryan.Projectiles;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace TCIPMod.Core.Items
+namespace TCIPMod.Core.Ryan.Items
 {
 	public class SatanicShiv : ModItem
 	{

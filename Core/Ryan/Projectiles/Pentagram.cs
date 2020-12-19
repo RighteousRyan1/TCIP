@@ -1,11 +1,11 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using TCIPMod.Core.Buffs;
+using TCIPMod.Core.Ryan.Buffs;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace TCIPMod.Core.Projectiles
+namespace TCIPMod.Core.Ryan.Projectiles
 {
 	public class Pentagram : ModProjectile
 	{

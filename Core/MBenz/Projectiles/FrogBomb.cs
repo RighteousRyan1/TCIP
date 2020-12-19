@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace TCIPMod.MBenz.Projectiles
+namespace TCIPMod.Core.MBenz.Projectiles
 {
     public class FrogBomb
         : ModProjectile

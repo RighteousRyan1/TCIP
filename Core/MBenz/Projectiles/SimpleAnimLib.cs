@@ -1,7 +1,7 @@
 ﻿using System;
 using Terraria;
 
-namespace TCIPMod.MBenz.Projectiles
+namespace TCIPMod.Core.MBenz.Projectiles
 {
     public static class SimpleAnimLib
     {

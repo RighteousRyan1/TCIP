@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace TCIPMod.Core.Projectiles
+namespace TCIPMod.Core.Ryan.Projectiles
 {
 	public class SatanicShivProj : ModProjectile
 	{

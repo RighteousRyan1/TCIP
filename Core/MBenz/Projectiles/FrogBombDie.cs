@@ -4,7 +4,7 @@ using System.Linq;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace TCIPMod.MBenz.Projectiles
+namespace TCIPMod.Core.MBenz.Projectiles
 {
     public class FrogBombDie
         : ModProjectile
