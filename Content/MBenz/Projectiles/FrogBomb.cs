@@ -1,11 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System.Collections.Generic;
+using TCIPMod.Content.MiniLib;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace TCIPMod.Core.MBenz.Projectiles
+namespace TCIPMod.Content.MBenz.Projectiles
 {
     public class FrogBomb
         : ModProjectile
@@ -287,7 +288,7 @@ namespace TCIPMod.Core.MBenz.Projectiles
 
         protected void JumpSquatLogic()
         {
-            var jumpSquat = SimpleAnimLib.PlayAnimationSimple(projectile, new int[3] { 1, 2, 3 }, 3);
+            var jumpSquat = AnimationHelper.PlayAnimationSimple(projectile, new int[3] { 1, 2, 3 }, 3);
 
             if (!jumpSquat)
                 _currentState = FrogBombState.Jumping;
@@ -301,7 +302,7 @@ namespace TCIPMod.Core.MBenz.Projectiles
                 _stateTimer = 0;
             }
 
-            var playing = SimpleAnimLib.PlayAnimationSimple(projectile, new int[2] { 1, 2 }, 3);
+            var playing = AnimationHelper.PlayAnimationSimple(projectile, new int[2] { 1, 2 }, 3);
 
             if (_stateTimer == 0f)
             {

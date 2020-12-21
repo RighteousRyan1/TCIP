@@ -1,4 +1,4 @@
-﻿namespace TCIPMod.Core.MBenz.Projectiles
+﻿namespace TCIPMod.Content.MBenz.Projectiles
 {
     internal enum FrogBombState
     {

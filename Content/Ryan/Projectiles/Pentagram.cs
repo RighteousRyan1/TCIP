@@ -1,11 +1,11 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using TCIPMod.Core.Ryan.Buffs;
+using TCIPMod.Content.Ryan.Buffs;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace TCIPMod.Core.Ryan.Projectiles
+namespace TCIPMod.Content.Ryan.Projectiles
 {
 	public class Pentagram : ModProjectile
 	{
@@ -21,8 +21,6 @@ namespace TCIPMod.Core.Ryan.Projectiles
             projectile.hostile = false;
             projectile.friendly = true;
             projectile.scale = 1f;
-            drawOffsetX -= 10;
-            drawOriginOffsetY -= 10;
         }
         public override void PostAI()
         {

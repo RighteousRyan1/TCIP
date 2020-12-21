@@ -1,10 +1,10 @@
 using Microsoft.Xna.Framework;
-using TCIPMod.Core.Ryan.Projectiles;
+using TCIPMod.Content.Ryan.Projectiles;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace TCIPMod.Core.Ryan.Items
+namespace TCIPMod.Content.Ryan.Items
 {
 	public class SatanicShiv : ModItem
 	{
@@ -15,13 +15,12 @@ namespace TCIPMod.Core.Ryan.Items
 		public override void SetDefaults() 
 		{
 			item.damage = 35;
-			item.melee = true;
+			item.thrown = true;
 			item.width = 40;
 			item.height = 40;
 			item.useTime = 15;
 			item.useAnimation = 15;
 			item.useStyle = ItemUseStyleID.SwingThrow;
-			item.knockBack = 6;
 			item.value = 10000;
 			item.rare = ItemRarityID.Orange;
 			item.UseSound = SoundID.Item1;

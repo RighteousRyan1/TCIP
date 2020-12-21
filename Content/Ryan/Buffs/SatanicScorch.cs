@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace TCIPMod.Core.Ryan.Buffs
+namespace TCIPMod.Content.Ryan.Buffs
 {
     public class SatanicScorch : ModBuff
     {

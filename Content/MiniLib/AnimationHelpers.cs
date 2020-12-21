@@ -1,15 +1,14 @@
 ﻿using System;
 using Terraria;
 
-namespace TCIPMod.Core.MBenz.Projectiles
+namespace TCIPMod.Content.MiniLib
 {
-    public static class SimpleAnimLib
+    public static class AnimationHelper
     {
         #region Public Methods
 
-        public static bool PlayAnimationSimple(Projectile projectile,
-            int[] frames,
-            int framesBetween)
+        // Courtesy of Mercedes Benz
+        public static bool PlayAnimationSimple(Projectile projectile, int[] frames, int framesBetween)
         {
             int totalFrames = framesBetween * frames.Length;
 
@@ -28,7 +27,6 @@ namespace TCIPMod.Core.MBenz.Projectiles
                 return false;
             }
         }
-
         #endregion Public Methods
     }
 }

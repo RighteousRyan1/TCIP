@@ -1,10 +1,11 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System.Linq;
+using TCIPMod.Content.MiniLib;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace TCIPMod.Core.MBenz.Projectiles
+namespace TCIPMod.Content.MBenz.Projectiles
 {
     public class FrogBombDie
         : ModProjectile
@@ -21,7 +22,7 @@ namespace TCIPMod.Core.MBenz.Projectiles
         public override void AI()
         {
             projectile.scale = projectile.ai[0];
-            SimpleAnimLib.PlayAnimationSimple(projectile, _animFrames, _frameTiming);
+            AnimationHelper.PlayAnimationSimple(projectile, _animFrames, _frameTiming);
         }
 
         // Overriding draw because terraria default sheet management is making me want to jump off a cliff.

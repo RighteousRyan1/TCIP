@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace TCIPMod.Core.Ryan.Projectiles
+namespace TCIPMod.Content.Ryan.Projectiles
 {
 	public class SatanicShivProj : ModProjectile
 	{
@@ -14,6 +14,7 @@ namespace TCIPMod.Core.Ryan.Projectiles
 		}
         public override void SetDefaults()
         {
+            projectile.thrown = true;
             projectile.damage = 35;
             projectile.width = 10;
             projectile.height = 15;
